@@ -1,7 +1,8 @@
 /*********** HEADER TOP ***************/
-.header__container-top {
-    width: 100%;
+.header__top {
+    width: 70%;
     display: flex;
-
-    margin-top: 1.5rem;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 1rem;
 }
