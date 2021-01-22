@@ -5,7 +5,7 @@
     height: 0;
 }
 .hamburger-menu {
-    position: relative;
+    position: absolute;
     height: 0;
     margin: 0;
     padding: 0;
@@ -29,11 +29,10 @@
         ~ .menu__box {
             visibility: visible;
             align-items: center;
-            margin: 0;
+            top: 0;
             width: 100%;
-            height: 100vh;
-            position: fixed;
-            background-color: rgba(196, 196, 196, 0.89);
+            height: 89.6rem;
+            background: #f8f8f8;
             z-index: 8;
         }
     }
@@ -77,9 +76,8 @@
         top: 0;
         display: flex;
         justify-content: space-evenly;
-        width: 50rem;
-        margin-right: 1.3rem;
-        height: 100%;
+        width: 100%;
+        height: 100vh;
         padding: 4rem 0 0;
         transition-duration: 0.1s;
     }

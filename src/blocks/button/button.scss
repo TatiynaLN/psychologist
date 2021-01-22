@@ -1,0 +1,17 @@
+.button {
+    width: 13.75em;
+    height: 3.8125em;
+    background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 99.97%);
+    border-radius: 6.25em;
+    border: none;
+    transition-duration: 0.1s;
+    display: none;
+    &:hover {
+        background: linear-gradient(269.95deg, #56d0c9 0.05%, #4dc8c0 99.97%);
+        box-shadow: 0px 100px 80px rgba(66, 66, 66, 0.07), 0px 30.1471px 24.1177px rgba(66, 66, 66, 0.0456112),
+            0px 12.5216px 10.0172px rgba(66, 66, 66, 0.035), 0px 4.5288px 3.62304px rgba(66, 66, 66, 0.0243888);
+    }
+    &:active {
+        background: #44beb6;
+    }
+}
