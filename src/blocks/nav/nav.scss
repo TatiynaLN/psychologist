@@ -120,8 +120,13 @@
 
 .menu__item:hover {
     font-weight: bold;
+    color: #565b62;
 }
 
 .menu__item:active {
-    color: #56d0c9;
+    // text-transform: uppercase;
+    background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #4dc8c0;
 }

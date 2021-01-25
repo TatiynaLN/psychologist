@@ -1,6 +1,10 @@
 .contacts {
-    // text-align: center;
+    margin: 0 auto;
+    width: 29.9rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
+}
+.contacts__indent {
+    margin-top: 2.8rem;
 }
