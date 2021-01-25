@@ -1,8 +1,6 @@
 .contacts {
-    text-align: center;
+    // text-align: center;
     display: flex;
-}
-
-.contact {
-    display: block;
+    justify-content: center;
+    align-content: center;
 }
