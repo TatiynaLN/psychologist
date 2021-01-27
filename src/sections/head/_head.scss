@@ -13,3 +13,9 @@
     align-content: center;
     height: 100%;
 }
+
+@media screen and (min-width: 1320px) {
+    .content {
+        padding-top: 9rem;
+    }
+}
