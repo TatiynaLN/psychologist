@@ -109,3 +109,36 @@ a.form__policy-link {
 input {
     outline: none;
 }
+@media screen and (min-width: 900px) {
+    .mainText {
+        font-size: 4.4rem;
+        margin-top: 5rem;
+    }
+    .secondText {
+        font-size: 2.4rem;
+        margin-top: 4rem;
+        line-height: 4rem;
+    }
+    .btn__width {
+        width: 13.87em;
+        font-size: 1.8rem;
+    }
+    .form__policy {
+        margin-left: 10rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .form {
+        margin: 0 auto;
+        width: 64%;
+    }
+    .mainText {
+        font-size: 6.4rem;
+        margin-top: 9rem;
+    }
+
+    .form__input-phone {
+        margin-top: 3rem;
+    }
+}

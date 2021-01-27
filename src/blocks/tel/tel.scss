@@ -1,6 +1,7 @@
 .tel {
     display: block;
     width: 20rem;
+    align-self: center;
 }
 .time {
     position: relative;
@@ -34,5 +35,24 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #4dc8c0;
+    }
+}
+.tel-none {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .tel-none {
+        display: block;
+    }
+    .numbers {
+        font-size: 1.4rem;
+    }
+    .time {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1120px) {
+    .tel {
+        margin-left: 2rem;
     }
 }

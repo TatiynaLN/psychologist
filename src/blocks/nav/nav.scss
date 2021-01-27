@@ -93,8 +93,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     position: fixed;
     top: 2rem;
@@ -103,6 +101,7 @@
     height: 2rem;
     cursor: pointer;
     z-index: 9;
+    margin-top: 2rem;
 }
 
 .menu__btn > span,
@@ -147,7 +146,7 @@
     display: block;
     text-decoration: none;
     font-size: 2.4rem;
-    line-height: 3.3rem;
+    line-height: 4.7rem;
     text-align: center;
     color: #565b62;
     transition-duration: 0.01s;
@@ -166,5 +165,18 @@
     color: #4dc8c0;
 }
 .menu__list {
+    margin-top: 8.4rem;
     transition-duration: 0.01s;
+}
+// Не влазило на экраны 540px
+@media screen and (min-width: 540px) {
+    .menu__list {
+        margin-top: 5.4rem;
+        transition-duration: 0.01s;
+    }
+}
+@media screen and (min-width: 540px) {
+    .menu__btn {
+        margin-right: 3rem;
+    }
 }

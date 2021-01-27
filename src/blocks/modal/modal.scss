@@ -12,12 +12,9 @@
 .modalDialog:target {
     opacity: 1;
     pointer-events: auto;
-    transition: opacity 400ms ease-in;
 }
 
 .modalDialog > div {
-    height: 24.37em;
-    width: 22.12em;
     position: relative;
     margin: 15% auto;
     background: #ffffff;
@@ -72,4 +69,53 @@
     transform: rotate(90deg);
 }
 
-/***********************/
+/**********ADAPTIV MODAL*************/
+@media screen and (min-width: 768px) {
+    .modal {
+        height: 19.43em;
+        width: 41.75em;
+    }
+    .close {
+        width: 22.12em;
+        margin-top: -21rem;
+        padding-left: 38em;
+    }
+}
+@media screen and (min-width: 900px) {
+    .modal {
+        height: 29.06em;
+        width: 49.25em;
+    }
+    .modalDialog > div {
+        margin: 10% auto;
+    }
+    .close {
+        margin-top: -35rem;
+        padding-left: 43.5em;
+    }
+    .close > span,
+    .close > span::before {
+        width: 1.7em;
+        height: 0.125em;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .modal {
+        height: 39.06em;
+        width: 56.25em;
+    }
+    .modalDialog > div {
+        margin: 10% auto;
+    }
+    .close {
+        width: 28.12em;
+        margin-top: -49rem;
+        padding-left: 49em;
+    }
+    .close > span,
+    .close > span::before {
+        width: 1.7em;
+        height: 0.125em;
+    }
+}

@@ -12,3 +12,8 @@
 .addres {
     width: 20.9rem;
 }
+@media screen and (min-width: 1120px) {
+    .addres {
+        align-self: center;
+    }
+}

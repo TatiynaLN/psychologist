@@ -1,10 +1,26 @@
 header.header
-    include ../../blocks/phoneimg/phoneimg.pug
+    .contacts.contacts__indent
+        .phone__img.phone__img-indent
+            a(href="tel:+ 7 800 120-12-04")
+                svg(class="icons-tel")
+                    use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#phone")
+        .tel.tel-none
+            a.numbers(href="tel:+ 7 800 120-12-04") + 7 800 120-12-04
+            p.time  Ежедневно с 10 до 20 ч.
     include ../../blocks/logo/logo.pug
+    .address.address__indent.adress__none
+        .adress__img.adress__img-indent
+            a(href='#')
+                svg(class="address__icons")
+                    use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#Oval")
+                    a(href='#')
+                svg(class="address__icons2")
+                    use(xlink:href="/wp-content/themes/twentytwenty-child/img/icons/sprite.svg#oval2")
+        .addres
+            p.adress__text.adress__text-bold пр. Ленина, д.45, оф. 15
+            p.adress__text Москва, м. Московская
     include ../../blocks/nav/nav.pug
-        
     
-
     //- include ../../blocks/button/button.pug
     
 
