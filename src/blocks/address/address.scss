@@ -20,17 +20,19 @@
 @media screen and (min-width: 1120px) {
     .adress__none {
         display: block;
-    }
-    .address__indent {
         margin: 2.8rem;
     }
     .address {
         width: 28.9rem;
         display: flex;
-        justify-content: space-around;
-        align-content: center;
+        padding-bottom: 2rem;
     }
     .addres {
         align-self: center;
+    }
+}
+@media screen and (min-width: 1320px) {
+    .adress__none-desctop {
+        display: none;
     }
 }

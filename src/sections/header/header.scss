@@ -1,12 +1,16 @@
 /*********** HEADER TOP ***************/
 .header {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 1rem;
     z-index: 3;
     position: absolute;
+}
+.header__top {
+    margin: 0 auto;
+    width: 90%;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
+    padding-top: 1rem;
 }
 a {
     text-decoration: none;
@@ -21,57 +25,43 @@ a {
     justify-content: space-between;
     align-content: center;
 }
-.header .contacts__indent:nth-child(1) {
-    flex: 0.8;
+
+.nav__menu {
+    display: none;
 }
-.header .logo:nth-child(2) {
-    flex: 1;
-}
-.header .adress__non:nth-child(3) {
-    flex: 0;
-}
-.header nav:nth-child(4) {
-    flex: 1;
-}
-@media screen and (min-width: 768px) {
-    .header .contacts__indent:nth-child(1) {
-        flex: 1;
-    }
-    .header .logo:nth-child(2) {
-        flex: 0.8;
-    }
-    .header .adress__non:nth-child(3) {
-        flex: 0;
-    }
-    .header nav:nth-child(4) {
-        flex: 1;
-    }
-}
-@media screen and (min-width: 1020px) {
-    .header .contacts__indent:nth-child(1) {
-        flex: 1;
-    }
-    .header .logo:nth-child(2) {
-        flex: 1.8;
-    }
-    .header .adress__non:nth-child(3) {
-        flex: 0;
-    }
-    .header nav:nth-child(4) {
-        flex: 1;
-    }
-}
+
 @media screen and (min-width: 1120px) {
-    .header .contacts__indent:nth-child(1) {
-        flex: 1;
+    .header__top {
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
-    .header .logo:nth-child(2) {
-        flex: 1;
+}
+@media screen and (min-width: 1320px) {
+    .header__top {
+        margin: 0 auto;
+        width: 98%;
     }
-    .header .adress__non:nth-child(3) {
-        flex: 1;
+    .header__top .contacts__indent:nth-child(1) {
+        flex: 0.6;
+        order: 2;
     }
-    .header nav:nth-child(4) {
-        flex: 0.3;
+    .header__top .logo:nth-child(2) {
+        flex: 0.6;
+        order: 1;
+    }
+    .header__top .adress__none:nth-child(3) {
+        flex: 1;
+        order: 0;
+    }
+    .header__top .btn:nth-child(4) {
+        flex: 0.6;
+        order: 3;
+    }
+}
+@media screen and (min-width: 1420px) {
+    .header__top {
+        margin: 0 auto;
+        width: 80%;
     }
 }
