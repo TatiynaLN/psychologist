@@ -11,9 +11,13 @@
 }
 .addres {
     width: 20.9rem;
-    margin-left: 2rem;
 }
 .adress__none {
     justify-content: center;
     align-content: center;
+}
+@media screen and (min-width: 1120px) {
+    .addres__left {
+        margin-left: 2rem;
+    }
 }

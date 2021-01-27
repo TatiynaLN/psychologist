@@ -5,11 +5,8 @@
     position: absolute;
 }
 .header__top {
-    margin: 0 auto;
-    width: 90%;
-    // display: flex;
-    // justify-content: center;
-    // align-content: center;
+    width: 70%;
+    display: flex;
     padding-top: 1rem;
 }
 a {
@@ -35,6 +32,12 @@ a {
         display: flex;
         justify-content: center;
         align-content: center;
+
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+
+        padding-top: 1rem;
     }
 }
 @media screen and (min-width: 1320px) {
