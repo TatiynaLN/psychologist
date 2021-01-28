@@ -6,10 +6,12 @@
     align-content: center;
     justify-self: center;
     align-self: center;
-
     margin-top: 5rem;
 }
 .min-text__color {
+    background: #e89160;
+}
+.min-text__text {
     font-family: "Raleway";
     font-style: normal;
     font-weight: bold;
@@ -21,17 +23,17 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 1rem 0;
-    background: #e89160;
     border-radius: 0.5rem;
+}
+.min-text__margins {
+    margin: 1rem 0;
     padding: 1rem 2rem;
 }
-
 @media screen and (min-width: 768px) {
     .min-text {
         width: 52.7rem;
     }
-    .min-text__color {
+    .min-text__margins {
         margin: 1rem 1rem;
     }
 }
@@ -39,7 +41,7 @@
     .min-text {
         width: 55.7rem;
     }
-    .min-text__color {
+    .min-text__text {
         font-size: 1.8rem;
         line-height: 2.1rem;
     }
