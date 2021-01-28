@@ -5,6 +5,22 @@
 .txt-bold {
     font-weight: bold;
 }
-.aboutTwo {
-    padding: 15rem 0;
+// для слайдера
+.education {
+    min-width: 0;
+}
+@media screen and (min-width: 1020px) {
+    .sectionTwo-indent {
+        margin-top: 10rem;
+    }
+}
+@media screen and (min-width: 1520px) {
+    .education {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .education__box {
+        width: 49%;
+    }
 }
