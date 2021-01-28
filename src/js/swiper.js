@@ -1,10 +1,7 @@
 "use strict";
 ;
 
-// (function () {
-//     onclick = (document.getElementById('example_1').style.display = 'block');
-
-// })();
+new Swiper('.education-slider');
 "use strict";
 
 ;
