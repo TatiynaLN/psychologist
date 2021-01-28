@@ -8,8 +8,28 @@
     width: 82%;
 }
 .about-indent {
-    margin-top: 4.6rem;
+    padding: 4rem 0;
 }
 .about {
     overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .about__content-width {
+        width: 62rem;
+    }
+}
+
+@media screen and (min-width: 1560px) {
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .about__content {
+        order: 1;
+    }
+    .min-text__width {
+        margin: 0;
+    }
 }

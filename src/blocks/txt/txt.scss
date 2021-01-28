@@ -9,7 +9,19 @@
 }
 .txt-indent {
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 .txt-center {
     margin-left: 2.8rem;
+}
+@media screen and (min-width: 768px) {
+    .txt-center {
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 1560px) {
+    .txt {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
 }
