@@ -1,6 +1,4 @@
 .text {
-    width: 35.4rem;
-    height: 7.5rem;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 600;
@@ -12,20 +10,25 @@
     justify-self: center;
     align-self: center;
 }
+.text_width {
+    width: 35.4rem;
+}
 @media screen and (min-width: 620px) {
     .text {
-        width: 46rem;
-        height: 7rem;
         font-size: 2rem;
         line-height: 3rem;
+    }
+    .text_width {
+        width: 46rem;
     }
 }
 @media screen and (min-width: 768px) {
     .text {
         margin-top: 2rem;
-        width: 63.3rem;
-        height: 6.8rem;
         font-size: 2.4rem;
         line-height: 3.3rem;
+    }
+    .text_width {
+        width: 63.3rem;
     }
 }
