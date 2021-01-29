@@ -20,7 +20,9 @@
 .situations-height {
     margin-top: 5rem;
 }
-
+.btn__indent {
+    margin-bottom: 3rem;
+}
 @media screen and (min-width: 768px) {
     .closeTwo {
         margin-top: -30rem;
@@ -46,11 +48,22 @@
     }
 }
 @media screen and (min-width: 1020px) {
+    .block__flex {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
     .closeTwo {
         margin-top: -34rem;
         padding-left: 49em;
     }
     .situations-height {
         margin-top: 10rem;
+    }
+    .titles__width {
+        max-width: 40rem;
+    }
+    .txt-indents {
+        margin-bottom: 4rem;
     }
 }
