@@ -18,11 +18,9 @@ section.sectionFour
                         input.form__input-style(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
                     a.btn__width(href="#recordingTwo") Записаться на приём
                     .form__policy
-                        input.form__checkbox#modal__checkbox(type="checkbox" checked="")
-                        label.form__pol(for="modal__checkbox") Вы соглашаетесь с 
-                            a.form__policy-link(href="#!") условиями обработки персональных данных
-        .info
-            input#info__body_1.info__switch(type="checkbox")
-            label.info__headline(for="info__body_1") Неуверенность в своих силах, сомнения в себе, неприятие своего тела, негативное отношение к себе
-                //- span.arrow_acord
-            p.info__body Если вы чувствуете, что живете не своей жизнью, а соответствуете ожиданиям другим. Не можете изменить, то что не устраивает, сказать нет. Сомневаетесь в своих решениях. Постоянно критикуете свою внешность, поступки, мысли.
+                        input.form__checkbox#form__checkboxThree(type="checkbox" checked="")
+                        label.form__pol(for="form__checkboxThree") 
+                            p.form__policy-links Вы соглашаетесь с 
+                                a.form__policy-link(href="#!") условиями обработки персональных данных
+        include ../../blocks/accordion/accordion.pug
+        
