@@ -1,0 +1,28 @@
+section.sectionFour
+    .situations.width.situations-height
+        p.min-text__text.min-text__color.situations__text-width Повод обратиться
+        h2.titles.titles-indent В каких случаях нужна консультация психолога?
+        p.txt.txt-indent.situations-width Консультация психолога - это инструмент, который помогает людям понять и разрешить эмоциональные сложности, улучшить качество жизни, принимать более правильные решения. 
+        p.txt.txt-indent.txt__.situations-width Современная психотерапия - это личный процесс, в котором человек учится осознавать свои эмоциональные состояния, управлять эмоциями, находить источник спокойствия, силы и радости внутри себя.
+        a.btn.btn_left(href="#openModalThree") Запись на консультацию
+        #openModalThree.modalDialog
+            .modal.modal__recording-height
+                a.close.closeTwo(href="#close" title="Закрыть")
+                    span
+                form.form
+                    h2.mainText.mainText__recording-indent Запись на приём
+                    p.secondText Оставьте свои контактные данные и мы свяжемся с вами в ближайшее время для уточнения деталей
+                    .formInput
+                        span
+                        input.form__input-style(type="text" name='name' placeholder="Ваше имя" required="required")
+                        input.form__input-style(type="text" name="user-phone" placeholder="Ваш номер телефона" required="required")
+                    a.btn__width(href="#recordingTwo") Записаться на приём
+                    .form__policy
+                        input.form__checkbox#modal__checkbox(type="checkbox" checked="")
+                        label.form__pol(for="modal__checkbox") Вы соглашаетесь с 
+                            a.form__policy-link(href="#!") условиями обработки персональных данных
+        .info
+            input#info__body_1.info__switch(type="checkbox")
+            label.info__headline(for="info__body_1") Неуверенность в своих силах, сомнения в себе, неприятие своего тела, негативное отношение к себе
+                //- span.arrow_acord
+            p.info__body Если вы чувствуете, что живете не своей жизнью, а соответствуете ожиданиям другим. Не можете изменить, то что не устраивает, сказать нет. Сомневаетесь в своих решениях. Постоянно критикуете свою внешность, поступки, мысли.
