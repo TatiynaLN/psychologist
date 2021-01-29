@@ -10,26 +10,42 @@
     overflow: hidden;
     transition: 0.4s;
     background: #ffffff;
-    box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.07), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
+    box-shadow: 0rem 10rem 80rem rgba(157, 157, 157, 0.09), 0rem 3.01rem 24.1177rem rgba(157, 157, 157, 0.0456112),
         0rem 1.25rem 1.001rem rgba(157, 157, 157, 0.035), 0rem 0.45rem 0.36rem rgba(157, 157, 157, 0.0243888);
     border-radius: 0rem 0rem 0.5rem 0.5rem;
     padding: 0 2rem;
     margin: 2rem 0;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.24rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #828282;
 }
 
 .info__switch:checked ~ .info__body {
     max-height: 100%;
 }
-#info__body_1 + label.info__headline {
+#info__body_1 + label.info__headline,
+#info__body_2 + label.info__headline,
+#info__body_3 + label.info__headline,
+#info__body_4 + label.info__headline {
     position: relative;
-    z-index: 6;
+    z-index: 2;
 }
-#info__body_1 + label.info__headline button.info__arrow {
+#info__body_1 + label.info__headline button.info__arrow,
+#info__body_2 + label.info__headline button.info__arrow,
+#info__body_3 + label.info__headline button.info__arrow,
+#info__body_4 + label.info__headline button.info__arrow {
     position: relative;
     z-index: -1;
 }
 .info__arrow-top {
     top: 5rem;
+}
+.info__arrow-tops {
+    top: 2rem;
 }
 .info__arrow {
     background-image: none;
@@ -65,7 +81,7 @@
 .info__headline {
     display: block;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding-bottom: 1.9rem;
     user-select: none;
     font-weight: normal;
@@ -81,7 +97,7 @@
 }
 a.info__links {
     display: block;
-    margin: 0 auto;
+    margin-left: 1.5rem;
     font-family: "Raleway";
     font-style: normal;
     font-weight: bold;
@@ -89,6 +105,25 @@ a.info__links {
     line-height: 1.96rem;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #ffffff;
-    width: 85.5%;
+    width: 83.5%;
     margin-top: -0.5rem;
+}
+@media screen and (min-width: 540px) {
+    .info__arrow-top {
+        top: 4.5rem;
+    }
+}
+@media screen and (min-width: 640px) {
+    .info__arrow-top {
+        top: 3.5rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .info__body {
+        font-size: 1.8rem;
+        line-height: 2.88rem;
+    }
+    .info__arrow-top {
+        top: 2.5rem;
+    }
 }
