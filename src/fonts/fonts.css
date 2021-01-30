@@ -90,6 +90,14 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway Italic"), local("Raleway-Italic"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Italic.woff2") format("woff2"),
+    url("/wp-content/themes/twentytwenty-child/fonts/Raleway/Raleway-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
 /**********************/
 /************* Gotham Pro ********************/
 @font-face {
