@@ -55,6 +55,15 @@ button.btn {
     justify-content: center;
     align-content: center;
 }
+.titl {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.52rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #565b62;
+}
 @media screen and (min-width: 768px) {
     .adventige__width {
         width: 29rem;
@@ -91,5 +100,9 @@ button.btn {
 @media screen and (min-width: 1700px) {
     .adventige__width {
         width: 44rem;
+    }
+    .titl {
+        font-size: 2.4rem;
+        line-height: 3.36rem;
     }
 }
