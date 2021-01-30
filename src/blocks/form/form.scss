@@ -26,6 +26,17 @@ input.form__checkbox {
     cursor: pointer;
     margin-right: 5rem;
 }
+[for="form__checkboxFour"] {
+    position: relative;
+    display: block;
+    width: 1.4rem;
+    height: 1.5rem;
+    background: linear-gradient(269.95deg, #4dc8c0 0.05%, #56d0c9 99.97%);
+    border-radius: 0.2rem;
+    background-size: 8rem 0.2rem;
+    cursor: pointer;
+    margin-right: 5rem;
+}
 [for="form__checkboxFour"]::before,
 [for="form__checkboxThree"]::before,
 [for="modal__checkbox"]:before {
