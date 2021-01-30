@@ -12,6 +12,9 @@
 .about {
     overflow: hidden;
 }
+.section__one {
+    margin-top: 15rem;
+}
 @media screen and (min-width: 768px) {
     .about__content-width {
         width: 62rem;
@@ -30,5 +33,8 @@
     }
     .about__text-width {
         margin: 0;
+    }
+    .section__one {
+        margin-top: 30rem;
     }
 }

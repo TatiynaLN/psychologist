@@ -10,7 +10,6 @@
     width: 100%;
     background: #ffffff;
     text-align: center;
-    padding: 4.4rem 0;
 }
 .section__form {
     margin: 0 auto;
@@ -36,8 +35,14 @@
 .form__displiy {
     .form__policy {
         margin: 0;
-        margin-top: 3rem;
+
         margin-left: -1rem;
+    }
+}
+.form__displiy-indent {
+    padding: 4.4rem 0;
+    .form__policy {
+        margin-top: 3rem;
     }
 }
 @media screen and (min-width: 868px) {

@@ -1,3 +1,4 @@
+#form__checkboxs,
 #modal__checkbox,
 #form__checkboxTwo,
 #form__checkboxFour,
@@ -15,6 +16,7 @@
 input.form__checkbox {
     margin-right: 2rem;
 }
+[for="form__checkboxs"],
 [for="form__checkboxTwo"],
 [for="form__checkboxFour"],
 [for="modal__checkbox"],
@@ -40,6 +42,7 @@ input.form__checkbox {
     cursor: pointer;
     margin-right: 5rem;
 }
+[for="form__checkboxs"]::before,
 [for="form__checkboxTwo"]::before,
 [for="form__checkboxFour"]::before,
 [for="form__checkboxThree"]::before,
@@ -60,6 +63,7 @@ input.form__checkbox {
     transition: 0.2s;
     opacity: 0;
 }
+#form__checkboxs:checked ~ [for="form__checkboxs"]:before,
 #form__checkboxTwo:checked ~ [for="form__checkboxTwo"]:before,
 #form__checkboxFour:checked ~ [for="form__checkboxFour"]:before,
 #form__checkboxThree:checked ~ [for="form__checkboxThree"]:before,
@@ -189,6 +193,9 @@ input {
         font-size: 4.4rem;
         margin-top: 5rem;
     }
+    .mainTexts {
+        font-size: 4.4rem;
+    }
     .mainText__challenge-indent {
         margin-top: 5rem;
     }
@@ -211,9 +218,11 @@ input {
         margin: 0 auto;
         width: 64%;
     }
-    .mainText {
+    .mainText,
+    .mainTexts {
         font-size: 6.4rem;
     }
+
     .mainText__challenge-indent {
         margin-top: 9rem;
     }
