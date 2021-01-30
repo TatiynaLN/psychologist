@@ -1,4 +1,5 @@
 #modal__checkbox,
+#form__checkboxFour,
 #form__checkboxThree {
     opacity: 0;
     position: absolute;
@@ -12,6 +13,7 @@
 input.form__checkbox {
     margin-right: 2rem;
 }
+[for="form__checkboxFour"],
 [for="modal__checkbox"],
 [for="form__checkboxThree"] {
     position: relative;
@@ -24,6 +26,7 @@ input.form__checkbox {
     cursor: pointer;
     margin-right: 5rem;
 }
+[for="form__checkboxFour"]::before,
 [for="form__checkboxThree"]::before,
 [for="modal__checkbox"]:before {
     content: "";
@@ -42,6 +45,7 @@ input.form__checkbox {
     transition: 0.2s;
     opacity: 0;
 }
+#form__checkboxFour:checked ~ [for="form__checkboxFour"]:before,
 #form__checkboxThree:checked ~ [for="form__checkboxThree"]:before,
 #modal__checkbox:checked ~ [for="modal__checkbox"]:before {
     opacity: 1;

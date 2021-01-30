@@ -1,0 +1,44 @@
+.sectionEight {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.form__displiy {
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    margin: 2.8rem 0;
+}
+.section__form {
+    margin: 0 auto;
+}
+.form__policy-center {
+    margin: 0 auto;
+    width: 80%;
+}
+.formInput-flex {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.form__input-block {
+    display: block;
+}
+@media screen and (min-width: 868px) {
+    .formInput-indent {
+        margin: 0;
+    }
+    .formInput-flex {
+        margin: 2.5rem 0;
+    }
+}
+@media screen and (min-width: 1260px) {
+    .form__policy-center {
+        width: 60%;
+    }
+}
