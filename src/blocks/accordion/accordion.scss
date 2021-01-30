@@ -38,59 +38,89 @@
     position: relative;
     z-index: 2;
 }
-#info__body_1 + label.info__headline button.info__arrow,
-#info__body_2 + label.info__headline button.info__arrow,
-#info__body_3 + label.info__headline button.info__arrow,
-#info__body_4 + label.info__headline button.info__arrow,
-#info__body_5 + label.info__headline button.info__arrow,
-#info__body_6 + label.info__headline button.info__arrow,
-#info__body_7 + label.info__headline button.info__arrow,
-#info__body_8 + label.info__headline button.info__arrow {
+// #info__body_1 + label.info__headline,
+// #info__body_2 + label.info__headline,
+// #info__body_3 + label.info__headline,
+// #info__body_4 + label.info__headline,
+// #info__body_5 + label.info__headline,
+// #info__body_6 + label.info__headline,
+// #info__body_7 + label.info__headline,
+// #info__body_8 + label.info__headline {
+//     position: relative;
+//     z-index: -1;
+// }
+[for="info__body_8"]:before,
+[for="info__body_7"]:before,
+[for="info__body_6"]:before,
+[for="info__body_5"]:before,
+[for="info__body_4"]:before,
+[for="info__body_3"]:before,
+[for="info__body_2"]:before {
+    content: "";
+    position: absolute;
+    left: 90%;
+    top: 0;
+
+    display: block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-image: url("/wp-content/themes/twentytwenty-child/img/chevron.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
-    z-index: -1;
+    transition: 0.001ms;
+    opacity: 1;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.96rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #ffffff;
 }
-.info__arrow-top {
-    top: 5rem;
+
+[for="info__body_1"]:before {
+    content: "";
+    position: absolute;
+    left: 90%;
+    top: 0;
+    display: block;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-image: url("/wp-content/themes/twentytwenty-child/img/chevron.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: 0.001ms;
+    opacity: 1;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.96rem;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #ffffff;
 }
-.info__arrow-tops {
-    top: 2rem;
+
+#info__body_8:checked ~ [for="info__body_8"]:before,
+#info__body_7:checked ~ [for="info__body_7"]:before,
+#info__body_6:checked ~ [for="info__body_6"]:before,
+#info__body_5:checked ~ [for="info__body_5"]:before,
+#info__body_4:checked ~ [for="info__body_4"]:before,
+#info__body_3:checked ~ [for="info__body_3"]:before,
+#info__body_2:checked ~ [for="info__body_2"]:before,
+#info__body_1:checked ~ [for="info__body_1"]:before {
+    transform: rotate(180deg);
 }
-.info__arrow {
-    background-image: none;
-    background: transparent;
-    left: 88%;
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0.7rem;
-        top: 0.8rem;
-        width: 1.2rem;
-        border: 0.1rem solid#fff;
-        transform: rotate(-48deg) translateY(6px);
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0.8rem;
-        top: 0.8rem;
-        width: 1.2rem;
-        border: 0.1rem solid#fff;
-        transform: rotate(48deg) translateY(6px);
-    }
-}
-.info__switch:checked + .info__headline button.info__arrow {
-    transform: rotate(180deg) translateY(1rem);
-}
+/*****************/
 .info__headline {
     display: block;
     position: relative;
+    height: auto;
     margin-top: 1rem;
-    padding-bottom: 1.9rem;
+    padding: 1.9rem 0;
     user-select: none;
     font-weight: normal;
     cursor: pointer;
@@ -113,8 +143,8 @@ a.info__links {
     line-height: 1.96rem;
     font-feature-settings: "pnum" on, "lnum" on;
     color: #ffffff;
-    width: 83.5%;
-    margin-top: -0.5rem;
+    width: 85.5%;
+    margin-top: -2rem;
 }
 @media screen and (min-width: 540px) {
     .info__arrow-top {
